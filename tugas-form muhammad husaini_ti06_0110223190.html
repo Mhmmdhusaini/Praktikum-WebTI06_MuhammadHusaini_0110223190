@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+    <header>
+        <nav style="display: flex; justify-content: center;">
+            <div class="navbar-nav">
+                <ul style="display: flex;list-style-type: none;">
+                    <li>|</li>
+                    <li><a href="#" style="text-decoration: none; margin: 100px; color: black;">Home</a></li><hr style="margin: 0px; padding: 0px;">
+                    <li><a href="#" style="text-decoration: none; margin: 100px; color: black;">Generate</a></li><hr style="margin: 0px; padding: 0px;">
+                    <li><a href="#" style="text-decoration: none; margin: 100px; color: black;">Transaction</a></li><hr style="margin: 0px; padding: 0px;">
+                    <li><a href="#" style="text-decoration: none; margin: 100px; color: black;">Policy</a></li><hr style="margin: 0px; padding: 0px;">
+                    <li><a href="#" style="text-decoration: none; margin: 100px; color: black;">Logout</a></li><hr style="margin: 0px; padding: 0px;">
+                    <li></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <br>
+
+    <div class="container">
+        <main class="content">
+            <div class="container1" style="display: flex; justify-content:center;">
+                <div class="kiri">
+                    <div style="border: 2px solid rgb(12,12,12); margin: 0 2px; padding: 5px; width: 5cm; height: 7cm;">
+                    </div>
+                    <br>
+                    <input type="File">
+                </div>
+                <div class="kanan">
+                    <table>
+                        <tr>
+                            <td>Title Here :</td>
+                            <td><input type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td>Description :</td>
+                            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Account Number:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Bank :</td>
+                            <td><select>
+                                <option value="BCA">BCA</option>
+                                <option value="MANDRI">MANDIRI</option>
+                                <option value="BSI">BSI</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Account Holder :</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Transaction :</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>* if the transaction is for 3 person, choose 3 from the drop-down list </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox">Send to mobile phone</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox">Send to email</td>
+                        </tr>
+                        <tr>
+                            <td>Send to mobile phone :</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Send to email :</td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Generate nabr link" style="background-color: green;color: aliceblue;"></td>
+                        </tr>  
+                    </table>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+</body>
+</html>
