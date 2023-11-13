@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi</title>
+  </head>
+  <style>
+    body {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    fieldset {
+      height: 500px;
+      width: 1000px;
+      text-align: left;
+      border: 2px solid black;
+    }
+    legend {
+      color: black;
+    }
+    label,
+    input,
+    select,
+    textarea {
+      display: inline-block;
+      vertical-align: top;
+    }
+    label {
+      text-align: right;
+      padding-right: 10px;
+    }
+    input,
+    select,
+    textarea {
+      width: 150px;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <legend>Form Registrasi Tempat Wisata</legend>
+      <br />
+      <label for="namatempatwisata">Nama Tempat Wisata :</label>
+      <input
+        type="text"
+        id="namatempatwisata"
+        name="namatempatwisata"
+        required
+      />
+      <br /><br />
+      <label for="jeniswisata">Jenis wisata :</label>
+      <select name="jeniswisata" id="jeniswisata" required>
+        <option value="taman">Taman</option>
+        <option value="kolamrenang">Kolam Renang</option>
+        <option value="hewan">Hewan</option>
+      </select>
+      <br /><br />
+      <label for="deskripsiwisata">Deskripsi Wisata :</label>
+      <textarea
+        name="deskripsiwisata"
+        id="deskripsiwisata"
+        cols="30"
+        rows="2"
+      ></textarea>
+      <br /><br />
+      <label for="kontakperson">Kontak Person :</label>
+      <input type="text" id="kontakperson" name="kontakperson" required />
+      <br /><br />
+      <label for="nohp/telpon">No HP/Telpon :</label>
+      <input type="text" id="nohp/telpon" name="nohp/telpon" required />
+      <br /><br />
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" required />
+      <br /><br />
+      <label for="alamatweb">Alamat Web :</label>
+      <input type="url" name="alamatweb" id="alamatweb" required />
+      <br /><br />
+      <label for="alamatlengkap">Alamat Lengkap :</label>
+      <textarea
+        name="alamatlengkap"
+        id="alamatlengkap"
+        cols="30"
+        rows="2"
+      ></textarea>
+      <br /><br />
+      <label for="latidude,longitude">Latidude,Longitude :</label>
+      <input
+        type="text"
+        id="latidude,longitude"
+        name="latidude,longitude"
+        required
+      />
+      <br /><br />
+      <input type="submit" value="Daftar" />
+      <input type="reset" value="Batal" />
+    </fieldset>
+  </body>
+</html>
