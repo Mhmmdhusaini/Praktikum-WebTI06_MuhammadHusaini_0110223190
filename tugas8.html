@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TugasFlexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .container {
+        display: flex;
+      }
+      .kiri .nav {
+        background-color: pink;
+        height: 100vh;
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header {
+        background-color: yellow;
+        width: 75vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        display: flex;
+      }
+      .article {
+        background-color: white;
+        height: 80vh;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .aside {
+        background-color: aqua;
+        width: 25vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .footer {
+        background-color: yellow;
+        height: 10vh;
+        width: 75vw;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kiri">
+        <nav class="nav">
+          <h1>nav</h1>
+        </nav>
+      </div>
+      <div class="kanan">
+        <header class="header">
+          <h1>header</h1>
+        </header>
+        <main class="main">
+          <article class="article"><h1>article</h1></article>
+          <aside class="aside"><h1>aside</h1></aside>
+        </main>
+        <footer class="footer">
+          <h1>footer</h1>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
