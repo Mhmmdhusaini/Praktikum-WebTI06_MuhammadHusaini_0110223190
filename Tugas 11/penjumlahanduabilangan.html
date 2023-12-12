@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Jumlah 2 Bilangan</title>
+  </head>
+  <body>
+    <h1>Menghitung Jumlah Dua Bilangan</h1>
+    <!-- bilangan ke - 1 -->
+    <label for="bil1"></label>
+    <input type="number" id="bil1" name="bil1" onchange="hasilBilangan()" />
+
+    <p>+</p>
+    <!-- bilangan ke - 2 -->
+    <label for="bil2"></label>
+    <input type="number" id="bil2" name="bil2" onchange="hasilBilangan()" />
+
+    <p><span id="rumusBilangan"></span></p>
+
+    <script>
+      function hasilBilangan() {
+        let bilangan1 = parseFloat(document.getElementById("bil1").value);
+        let bilangan2 = parseFloat(document.getElementById("bil2").value);
+        let rumusBilangan = bilangan1 + bilangan2;
+        document.getElementById("rumusBilangan").innerText =
+          "Hasil nya=" + rumusBilangan;
+      }
+    </script>
+  </body>
+</html>
